@@ -86,12 +86,14 @@ a{
 .main-footer ul {
   position: absolute;
   bottom: 35px;
-  left: 300px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .main-footer ul li {
   float: left;
-  padding: 15px 15px;
+  padding: 30px 20px;
   background-color: #fff;
+  font-size: 18px;
 }
 
 .main-footer ul li:first-child{
@@ -104,6 +106,11 @@ a{
 }
 .main-footer ul li:nth-child(2) {
   color: #3e9ef8;
+}
+
+/* 스와이퍼 버튼 */
+.swiper-button-next{
+  
 }
 .menu-bar {
   position: fixed;
@@ -174,7 +181,8 @@ a{
 .main-second-footer ul {
   position: absolute;
   bottom: 35px;
-  left: 300px;
+  left: 50%;
+  transform: translateX(-50%);
   color: black;
 }
 .main-second-footer ul li:nth-child(3){
@@ -182,8 +190,9 @@ a{
 }
 .main-second-footer ul li {
   float: left;
-  padding: 15px 15px;
+  padding: 30px 20px;
   background-color: #fff;
+  font-size: 18px;
 }
 /* 메인3번 */
 .main-third{
@@ -220,7 +229,8 @@ a{
 .main-third-footer ul {
   position: absolute;
   bottom: 35px;
-  left: 300px;
+  left: 50%;
+  transform: translateX(-50%);
   color: black;
 }
 .main-third-footer ul li:nth-child(4){
@@ -228,8 +238,9 @@ a{
 }
 .main-third-footer ul li {
   float: left;
-  padding: 15px 15px;
+  padding: 30px 20px;
   background-color: #fff;
+  font-size: 18px;
 }
 
 
@@ -270,13 +281,15 @@ a{
 .main-fourth-footer ul {
   position: absolute;
   bottom: 35px;
-  left: 300px;
+  left: 50%;
+  transform: translateX(-50%);
   color: black;
 }
 .main-fourth-footer ul li {
   float: left;
-  padding: 15px 15px;
+  padding: 30px 20px;
   background-color: #fff;
+  font-size: 18px;
 }
 .main-fourth-footer ul li i {
   color: #3e9ef8;
@@ -318,13 +331,15 @@ a{
 .main-fifth-footer ul {
   position: absolute;
   bottom: 35px;
-  left: 300px;
+  left: 50%;
+  transform: translateX(-50%);
   color: black;
 }
 .main-fifth-footer ul li {
   float: left;
-  padding: 15px 15px;
+  padding: 30px 20px;
   background-color: #fff;
+  font-size: 18px;
 }
 .main-fifth-footer ul li:nth-child(6){
   color: #3e9ef8;
@@ -361,13 +376,15 @@ a{
 .main-sixth-footer ul {
   position: absolute;
   bottom: 35px;
-  left: 300px;
+  left: 50%;
+  transform: translateX(-50%);
   color: black;
 }
 .main-sixth-footer ul li {
   float: left;
-  padding: 15px 15px;
+  padding: 30px 20px;
   background-color: #fff;
+  font-size: 18px;
 }
 
 .main-sixth-footer ul li:nth-child(7){
@@ -375,29 +392,222 @@ a{
 }
 /* 왼쪽버튼 */
 .swiper-button-prev{
-  top: 92%;
-  left: 250px;
+  top: 90%;
+  left: 400px;
 }
 /* 오른쪽버튼 */
 .swiper-button-next{
-  top: 92%;
-  right: 270px;
+  top: 90%;
+  right: 400px;
 }
 
 /* main2번째 창 */
 .mid-wrap{
   width: 75%;
-  height: 800px;
+  height: 1200px;
   margin: 40px auto;
-  background-color: brown;
   padding: 40px 0;
   color: #fff;
 }
 .mid-inner h1{
   text-align: center;
   color: #3e9ef8;
+  font-size: 50px;
 }
 .mid-inner h2{
   text-align: center;
+  color: black;
+  font-size: 40px;
+}
+/* 메인2번 이미지 */
+.img-wrap{
+  padding-top: 40px;
+  width: 100%;
+  height: 420px;
+  position: relative;
+  display: block;
+}
+.img-first{
+  width: 415px;
+  height: 500px;
+}
+.img-box1{
+  background: url("../image/main2-img/main2-img1.jpg")no-repeat;
+  width: 32%;
+  height: 415px;
+  background-size: cover;
+  margin-left: 20px;
+  text-align: center;
+  padding-top: 100px;
+  position: absolute;
+}
+.img-box1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4); 
+}
+.img-box1 p {
+  position: relative;
+  z-index: 2;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 25px;
+}
+.img-box1 p:nth-child(1){
+  font-size: 55px;
 }
 
+.img-box2{
+  background: url("../image/main2-img/main2-img2.jpg")no-repeat;
+  width: 62%;
+  height: 415px;
+  right: 50px;
+  background-size: cover;
+  text-align: center;
+  padding-top: 100px;
+  position: absolute;
+}
+.img-box2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+.img-box2 p {
+  position: relative;
+  z-index: 2;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  padding-top: 15px;
+  padding-bottom: 10px;
+  font-size: 25px;
+}
+.img-box2 p:nth-child(1){
+  font-size: 55px;
+}
+
+.img-wrap-two{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 100px;
+  
+  }
+  .img-second{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+  }
+.img-box3{
+  background: url("../image/main2-img/main2-img3.jpg")no-repeat;
+  width:100%;
+  background-size: cover;
+  text-align: center;
+  padding-top: 100px;
+}
+.img-box3::before {
+  content: "";
+  width: 620px;
+  height: 414px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4); 
+}
+.img-box3 p {
+  position: relative;
+  z-index: 2;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  padding-top: 15px;
+  padding-bottom: 10px;
+  font-size: 25px;
+}
+.img-box3 p:nth-child(1){
+  font-size: 55px;
+}
+.img-box4{
+  background: url("../image/main2-img/main2-img4.jpg")no-repeat;
+  width: 100%;
+  background-size: cover;
+  text-align: center;
+  padding-top: 100px;
+}
+.img-box4::before {
+  content: "";
+  width: 620px;
+  height: 414px;
+  position: absolute;
+  top: 10px;
+  left: 643px;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4); 
+}
+.img-box4 p {
+  position: relative;
+  z-index: 2;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  padding-top: 15px;
+  padding-bottom: 10px;
+  font-size: 25px;
+}
+.img-box4 p:nth-child(1){
+  font-size: 55px;
+}
+.img-box5{
+  background: url("../image/main2-img/main2-img5.jpg")no-repeat;
+  width: 100%;
+  height: 415px;
+  background-size: cover;
+  text-align: center;
+  padding-top: 100px;
+  position: relative;
+}
+.img-box5::before {
+  content: "";
+  width: 620px;
+  height: 414px;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0px;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4); 
+}
+.img-box5 p {
+  position: relative;
+  z-index: 2;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  padding-top: 15px;
+  padding-bottom: 10px;
+  font-size: 25px;
+}
+.img-box5 p:nth-child(1){
+  font-size: 55px;
+}
+.img-box1 p:nth-child(3){
+border: 1px solid #fff;
+display: inline-block;
+text-align: center;
+position: absolute;
+padding-bottom: 10px;
+}
