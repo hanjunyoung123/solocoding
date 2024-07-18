@@ -42,6 +42,40 @@
     align-items: center;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
   }
+  .footer{
+    width: 100%;
+    height: 250px;
+    max-width: 1100px;
+    min-width: 900px;
+    background-color: #D9D9D9;
+    clear: both;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .img{
+    width: 30%;
+    float: left;
+  }
+  .img img{
+    width: 100px;
+    height: 100px;
+  }
+  
+  .footer-info{
+    width: 100%;
+    float: left;
+    font-size: 13px;
+  }
+  .ft-first{
+    padding-top: 40px;
+    max-width: 626px;
+    max-height: 256px;
+  }
+  .ft-first li{
+    float: left;
+  }
 }
 @media screen and (max-width: 800px) {
   .main-info-txt h1 {
